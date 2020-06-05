@@ -1,5 +1,6 @@
 header{
   .xl-header{
+    z-index: 1;
     .container{
       .row{
         .logo{
@@ -180,5 +181,13 @@ header{
         }
       }
     }
+  }
+}
+.search-btn{
+  border-radius: 0 50px 50px 0;
+  a{
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
   }
 }

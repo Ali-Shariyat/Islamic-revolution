@@ -1,0 +1,16 @@
+footer{
+  .seasons{
+    .title-sign{
+      transform: rotate(-90deg);
+      right: -22px;
+      top: calc(50% + 2px);
+    }
+    ul{
+      border-right: 3px solid $color-summer-green;
+    }
+  }
+  .sub-footer{
+    border-top: 2px solid $color-iron;
+    border-bottom: 2px solid $color-iron;
+  }
+}
