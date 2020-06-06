@@ -2,11 +2,15 @@ footer{
   .seasons{
     .title-sign{
       transform: rotate(-90deg);
-      right: -22px;
+      right: -24px;
       top: calc(50% + 2px);
     }
     ul{
       border-right: 3px solid $color-summer-green;
+    }
+
+    @include media-query("(max-width: 991px)") {
+      width: 25% !important;
     }
   }
   .sub-footer{
