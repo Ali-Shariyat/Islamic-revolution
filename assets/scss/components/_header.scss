@@ -17,13 +17,14 @@ header {
       }
     }
 
-    .edame {
+    .edame,
+    .edame-right{
       position: absolute;
       left: 0;
       right: 0;
       top: 0;
       bottom: 0;
-      background-color: rgba(114, 114, 114, 0.50);
+      background-color: rgba(206, 198, 187, 0.5);
       transition: background-color ease .2s;
     }
 
@@ -35,7 +36,7 @@ header {
 
         .head-main {
           flex: 1;
-          background-color: rgba(114, 114, 114, 0.50);
+          background-color: rgba(206, 198, 187, 0.5);
           transition: background-color ease .2s;
 
           .menu {
@@ -47,7 +48,7 @@ header {
                   transition: all .2s ease;
 
                   &:hover {
-                    opacity: .7;
+                    background-color: $color-highland;
                   }
                 }
 
@@ -89,14 +90,15 @@ header {
         top: 0;
         z-index: 100;
 
-        .edame {
-          background-color: rgb(114, 114, 114);
+        .edame,
+        .edame-right {
+          //background-color: rgb(114, 114, 114);
         }
 
         .container {
           .row {
             .head-main {
-              background-color: rgb(114, 114, 114);
+              //background-color: rgb(114, 114, 114);
             }
           }
         }

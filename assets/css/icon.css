@@ -1,0 +1,120 @@
+
+
+@font-face {
+    font-family: "icon-pack";
+    src: url("../font/icon/fontello.eot?8646392");
+    src: url("../font/icon/fontello.eot?8646392#iefix") format("embedded-opentype"),
+    url("../font/icon/fontello.woff2?8646392") format("woff2"), url("../font/icon/fontello.woff?8646392") format("woff"),
+    url("../font/icon/fontello.ttf?8646392") format("truetype"), url("../font/icon/fontello.svg?8646392#fontello") format("svg");
+    font-weight: normal;
+    font-style: normal;
+}
+.icon-pack::before {
+    font-family: "icon-pack", serif;
+    display: flex;
+    line-height: 0.7;
+}
+.icons {
+    width: auto;
+    font-size: inherit;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    font-family: "icon-pack", serif;
+    text-align: center;
+    vertical-align: middle;
+    text-transform: none;
+    text-decoration: inherit;
+    position: relative;
+    display: inline-block;
+    margin-right: 0.2rem;
+    margin-left: 0.2rem;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+.css-sprite {
+    vertical-align: sub;
+    background-image: url(../img/css-sprite.png);
+    display: inline-block;
+    margin-right: 0.2rem;
+    margin-left: 0.2rem
+}
+.css-sprite.icon-home {
+    width: 21px;
+    height: 20px;
+    background-position: 100% 0
+}
+.css-sprite.icon-pencil {
+    width: 19px;
+    height: 21px;
+    background-position: 80% 0
+}
+.css-sprite.icon-product-sm {
+    width: 23px;
+    height: 21px;
+    background-position: 60% 0
+}
+.css-sprite.icon-action-list {
+    width: 21px;
+    height: 21px;
+    background-position: 38.8% 0
+}
+.css-sprite.icon-document {
+    width: 17px;
+    height: 21px;
+    background-position: 22% 0
+}
+.css-sprite.icon-book {
+    width: 22px;
+    height: 20px;
+    background-position: 0 0
+}
+.css-sprite.icon-pdf {
+    width: 25px;
+    height: 35px;
+    background-position: 0 100%
+}
+.css-sprite.icon-print {
+    width: 35px;
+    height: 35px;
+    background-position: 30% 100%
+}
+.css-sprite.icon-attach {
+    width: 35px;
+    height: 35px;
+    background-position: 69% 100%
+}
+.icon-search:before { content: '\e800' } /* '' */
+.icon-system:before { content: '\e801' } /* '' */
+.icon-product-lg:before { content: '\e802' } /* '' */
+.icon-location:before { content: '\e803' } /* '' */
+.icon-phone:before { content: '\e804' } /* '' */
+.icon-mail:before { content: '\e805' } /* '' */
+.icon-mail-2:before { content: '\e818' } /* '' */
+.icon-arrow-up:before { content: '\e806' } /* '' */
+.icon-arrow-right:before { content: '\e807' } /* '' */
+.icon-arrow-down:before { content: '\e808' } /* '' */
+.icon-arrow-left:before { content: '\e809' } /* '' */
+.icon-menu:before { content: '\e80a' } /* '' */
+.icon-menu-2:before { content: '\e813' } /* '' */
+.icon-close:before { content: '\e80b' } /* '' */
+.icon-plus:before { content: '\e80c' } /* '' */
+.icon-minus:before { content: '\e80d' } /* '' */
+.icon-whatsapp:before { content: '\e80e' } /* '' */
+.icon-instagram:before { content: '\e80f' } /* '' */
+.icon-facebook:before { content: '\e810' } /* '' */
+.icon-info:before { content: '\e812' } /* '' */
+.icon-dot:before { content: '\e811' } /* '' */
+.icon-book-list:before { content: '\e814' } /* '' */
+.icon-tag:before { content: '\e815' } /* '' */
+.icon-comment:before { content: '\e816' } /* '' */
+.icon-user:before { content: '\e817' } /* '' */
+.icon-col-1:before { content: '\e819' } /* '' */
+.icon-col-2:before { content: '\e81a' } /* '' */
+.icon-col-3:before { content: '\e81b' } /* '' */
+.icon-th:before { content: '\e81c' } /* '' */
+.icon-paper:before { content: '\e81d' } /* '' */
+.icon-author:before { content: '\e81e' } /* '' */
+.icon-reply:before { content: '\e81f' } /* '' */
+.icon-category:before { content: '\e820' } /* '' */
+.icon-blank:before { content: '\f0c8' } /* '' */

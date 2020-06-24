@@ -65,14 +65,19 @@ body {
 a, a:active, a:hover {
   text-decoration: none;
   color: inherit;
+  transition: all .2s ease;
 }
 
 a:hover {
-  & img {
-    opacity: .75;
-  }
+  opacity: .6;
 }
 
+a.hover-opacity-9:hover {
+  opacity: .9;
+}
+a.hover-opacity-1-unit:hover {
+  opacity: 1;
+}
 ul li {
   list-style: none
 }
@@ -185,6 +190,10 @@ ul li {
   color: $color-mist-gray;
 }
 
+.color-mariner {
+  color: $color-mariner;
+}
+
 //==========================================
 //background colors
 //==========================================
@@ -206,6 +215,10 @@ ul li {
 
 .bgc-periwinkle {
   background-color: $color-periwinkle;
+}
+
+.bgc-drench-gray {
+  background-color: $color-drench-gray;
 }
 
 .bgc-dove-gray-1 {
@@ -234,6 +247,10 @@ ul li {
 
 .bgc-iron-2 {
   background-color: $color-iron-2;
+}
+
+.bgc-iron-3 {
+  background-color: $color-iron-3;
 }
 
 .bgc-mercury-1 {
@@ -318,6 +335,10 @@ ul li {
 
 .bgc-strikemaster {
   background-color: $color-strikemaster;
+}
+
+.bgc-sinbad-2 {
+  background-color: $color-sinbad-2;
 }
 
 //==========================================
@@ -473,6 +494,10 @@ ul li {
   font-size: 50px !important;
 }
 
+.font-size-110 {
+  font-size: 110px !important;
+}
+
 //==========================================
 //flex
 //==========================================
@@ -494,6 +519,9 @@ ul li {
 
 .border-radius-top-right-10 {
   border-top-right-radius: 10px;
+}
+.border-radius-top-right-20 {
+  border-top-right-radius: 20px;
 }
 
 .border-radius-top-left-10 {
@@ -895,13 +923,19 @@ main{
 }
 
 .search-btn{
-  transition: width .2s ease;
+  transition: width .8s ease;
   width: 38px;
   &.active{
     width: 234px;
   }
   &.search-btn-footer{
     left: 0;
+    border-radius: 50px;
+    .icon-font-search{
+      width: 34px;
+      height: 34px;
+      border: 3px solid #fff;
+    }
   }
 }
 .search-box{

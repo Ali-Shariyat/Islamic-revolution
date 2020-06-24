@@ -16,7 +16,9 @@
     <meta name="theme-color" content="#FA4252">
     <link rel="stylesheet" type="text/css" href="assets/vendors/bootstrap/bootstrap-4.5.0-dist/css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="assets/css/plugins/bootstrap-rtl/bootstrap4-rtl.min.css">
+    <link rel="stylesheet" type="text/css" href="assets/vendors/flickity/css/flickity.min.css">
     <link rel="stylesheet" type="text/css" href="assets/css/plugins/animation/animate.min.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/plugins/scrollbar/jquery.scrollbar.css">
     <link rel="stylesheet" type="text/css" href="assets/css/main.css">
 </head>
 <body class="rtl">
@@ -29,7 +31,7 @@
             <div class="container custom-container">
                 <div class="row">
                     <div class="logo">
-                        <img src="assets/image/besmelah.png" alt="besmelah" class="w-100">
+                        <img src="assets/image/besmelah.png" alt="besmelah" class="w-100 h-100">
                     </div>
                     <div class="head-main mr-1 d-flex align-items-center">
                         <div>
@@ -56,35 +58,49 @@
                             <div class="menu w-100 px-2">
                                 <ul class="d-inline-flex mb-0 pt-1 mt-1">
                                     <li class="ml-2 position-relative">
-                                        <a href="" class="bgc-highland px-2 d-inline-flex font-weight-bold font-size-12">صفحه نخست</a>
+                                        <a href=""
+                                           class="bgc-old-gold px-2 d-inline-flex font-weight-bold font-size-12">صفحه
+                                            نخست</a>
                                         <div class="sub-menu position-absolute bgc-white">
-                                            <a href="" class="font-size-16 font-weight-bold px-1 d-block py-1">منوی اول</a>
-                                            <a href="" class="font-size-16 font-weight-bold px-1 d-block py-1">منوی دوم</a>
-                                            <a href="" class="font-size-16 font-weight-bold px-1 d-block py-1">منوی سوم</a>
+                                            <a href="" class="font-size-16 font-weight-bold px-1 d-block py-1">منوی
+                                                اول</a>
+                                            <a href="" class="font-size-16 font-weight-bold px-1 d-block py-1">منوی
+                                                دوم</a>
+                                            <a href="" class="font-size-16 font-weight-bold px-1 d-block py-1">منوی
+                                                سوم</a>
                                         </div>
                                     </li>
                                     <li class="ml-2">
-                                        <a href="" class="bgc-william px-2 d-inline-flex font-weight-bold font-size-12">اخبار و اطلاعیه ها</a>
-                                    </li>
-                                    <li class="ml-2">
-                                        <a href="" class="bgc-periwinkle px-2 d-inline-flex font-weight-bold font-size-12">دفاتر نمایندگی</a>
+                                        <a href=""
+                                           class="bgc-old-gold px-2 d-inline-flex font-weight-bold font-size-12">اخبار و
+                                            اطلاعیه ها</a>
                                     </li>
                                     <li class="ml-2">
                                         <a href=""
-                                           class="bgc-periwinkle px-2 d-inline-flex font-weight-bold font-size-12">پژوهش</a>
+                                           class="bgc-old-gold px-2 d-inline-flex font-weight-bold font-size-12">دفاتر
+                                            نمایندگی</a>
                                     </li>
                                     <li class="ml-2">
                                         <a href=""
-                                           class="bgc-periwinkle px-2 d-inline-flex font-weight-bold font-size-12">آموزش</a>
+                                           class="bgc-old-gold px-2 d-inline-flex font-weight-bold font-size-12">پژوهش</a>
                                     </li>
                                     <li class="ml-2">
-                                        <a href="" class="bgc-periwinkle px-2 d-inline-flex font-weight-bold font-size-12">پرونده ویژه</a>
+                                        <a href=""
+                                           class="bgc-old-gold px-2 d-inline-flex font-weight-bold font-size-12">آموزش</a>
                                     </li>
                                     <li class="ml-2">
-                                        <a href="" class="bgc-periwinkle px-2 d-inline-flex font-weight-bold font-size-12">مقالات</a>
+                                        <a href=""
+                                           class="bgc-old-gold px-2 d-inline-flex font-weight-bold font-size-12">پرونده
+                                            ویژه</a>
+                                    </li>
+                                    <li class="ml-2">
+                                        <a href=""
+                                           class="bgc-old-gold px-2 d-inline-flex font-weight-bold font-size-12">مقالات</a>
                                     </li>
                                     <li class="">
-                                        <a href="" class="bgc-periwinkle px-2 d-inline-flex font-weight-bold font-size-12">چند رسانه ای</a>
+                                        <a href=""
+                                           class="bgc-old-gold px-2 d-inline-flex font-weight-bold font-size-12">چند
+                                            رسانه ای</a>
                                     </li>
                                 </ul>
                             </div>
@@ -93,16 +109,19 @@
                             <a href=""
                                class="icon-font-search font-size-16 color-mist-gray d-inline-flex bgc-red align-items-center justify-content-center"></a>
                             <div class="d-flex position-absolute search-box">
-                                <input type="search" class="font-size-16 font-weight-bold border-0 outline-none mr-2" placeholder="جستجو">
-                                <a href="#" class="icon-font-search bgc-white d-inline-flex justify-content-center align-items-center border-radius-0"></a>
+                                <input type="search" class="font-size-16 font-weight-bold border-0 outline-none mr-2"
+                                       placeholder="جستجو">
+                                <a href="#"
+                                   class="icon-font-search bgc-white d-inline-flex justify-content-center align-items-center border-radius-0"></a>
                             </div>
                         </form>
-                        <div class="left-logo mr-2">
+                        <div class="left-logo">
                             <img src="assets/image/left-logo.png" class="w-100" alt="">
                         </div>
                     </div>
                 </div>
             </div>
+            <div class="edame-right"></div>
         </div>
     </div>
     <!----------- header in s and md ----------->
@@ -120,8 +139,10 @@
             <a href=""
                class="icon-font-search font-size-16 color-mist-gray d-inline-flex bgc-red align-items-center justify-content-center"></a>
             <div class="d-flex position-absolute search-box">
-                <input type="search" class="font-size-16 font-weight-bold border-0 outline-none mr-2" placeholder="جستجو">
-                <a href="#" class="icon-font-search bgc-white d-inline-flex justify-content-center align-items-center border-radius-0"></a>
+                <input type="search" class="font-size-16 font-weight-bold border-0 outline-none mr-2"
+                       placeholder="جستجو">
+                <a href="#"
+                   class="icon-font-search bgc-white d-inline-flex justify-content-center align-items-center border-radius-0"></a>
             </div>
         </form>
     </div>
@@ -164,106 +185,175 @@
     </div>
 </header>
 <main class="">
-    <div class="home-page">
-        <div class="container custom-container">
+    <a href="#"
+       class="home-page position-relative bgi-position-center bgi-no-repeat bgi-size-cover d-inline-flex w-100 hover-opacity-9"
+       style="background-image: url('assets/image/home-page-2.jpg')">
+        <div class="container custom-container position-absolute">
             <div class="row position-relative">
-
-                <img src="assets/image/home-page-2.jpg" class="w-100" alt="homepage" data-animation="fadeIn animated">
-                <div class="content position-absolute px-0 col-xl-5 col-lg-5 col-md-5 col-sm-12 col-12">
-                    <div class="title position-relative pr-4 dot-set dot-set-red border-radius-top-left-10 mr-4 mr-lg-0"  data-animation="fadeInUp animated">
-                        <h5 class="font-size-16 font-weight-bold text-white">تحولخواهی و تحولانگیزی از برجسته ترین
-                            خصوصیات حضرت امام</h5>
+                <div class="content px-0 col-xl-5 col-lg-5 col-md-5 col-sm-12 col-12">
+                    <div class="title position-relative pr-4 dot-set dot-set-red border-radius-top-left-10 mr-4 mr-lg-0"
+                         data-animation="fadeInUp animated">
+                        <span class="font-size-16 font-weight-bold text-white d-inline-flex">تحولخواهی و تحولانگیزی از برجسته ترین
+                            خصوصیات حضرت امام</span>
                     </div>
-                    <div class="title position-relative pr-4 border-radius-top-left-10 mr-4 mr-lg-0" data-animation="fadeInUp animated">
-                        <h1 class="font-size-50 font-weight-bold text-white">امام تحول</h1>
+                    <div class="title position-relative pr-4 border-radius-top-left-10 mr-4 mr-lg-0"
+                         data-animation="fadeInUp animated">
+                        <span class="font-size-50 font-weight-bold text-white d-inline-flex">امام تحول</span>
                         <div class="title-sign position-absolute bgc-red"></div>
                     </div>
-                    <p class="font-size-18 font-weight-bold text mt-5 mt-sm-4 pr-3 pl-4 py-2" data-animation="zoomIn animated">لورم ایپسوم متن ساختگی با تولید
+                    <p class="font-size-18 font-weight-bold text mt-5 mt-sm-4 pr-3 pl-4 py-2"
+                       data-animation="zoomIn animated">لورم ایپسوم متن ساختگی با تولید
                         سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله
                         در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد نیاز، و کاربردهای متنوع با هدف
                         بهبود ابزارهای کاربردی می باشد</p>
                 </div>
             </div>
         </div>
-    </div>
-    <div class="container custom-container" data-animation="zoomIn animated">
+    </a>
+    <!--    <div class="container custom-container" data-animation="zoomIn animated">-->
+    <!--        <div class="row">-->
+    <!--            <div class="quotes-from-professors w-100">-->
+    <!--                <ul class="w-100 d-flex flex-wrap">-->
+    <!--                    <li class="col-xl-6 col-lg-12 col-md-12 col-sm-12 col-12 pl-1 pr-0 d-flex mt-2">-->
+    <!--                        <div class="d-flex w-100 p-1 flex-wrap">-->
+    <!--                            <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12 p-0 d-flex align-items-center">-->
+    <!--                                <img src="assets/image/img-1.png" class="w-100 border-radius-top-left-80">-->
+    <!--                            </div>-->
+    <!--                            <div class="content col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12 pl-0 pr-0 pr-lg-2 mt-2 mt-lg-0">-->
+    <!--                                <div class="title position-relative pr-4 dot-set dot-set-red bgc-manhattan border-radius-top-left-10 mr-4 mr-lg-0">-->
+    <!--                                    <a href="" class="font-size-16 font-weight-bold">دکتر حبیب زاده:</a>-->
+    <!--                                    <div class="title-sign position-absolute bgc-old-gold"></div>-->
+    <!--                                </div>-->
+    <!--                                <h5 class="mb-1 mt-2 font-size-20 font-weight-bold">ترور سردار سلیمانی مصداق حمله-->
+    <!--                                    مسلحانه است</h5>-->
+    <!--                                <p class="mb-0 font-size-16">-->
+    <!--                                    لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان-->
+    <!--                                    گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است-->
+    <!--                                </p>-->
+    <!--                            </div>-->
+    <!--                        </div>-->
+    <!--                    </li>-->
+    <!--                    <li class="col-xl-3 col-lg-6 col-md-6 col-sm-12 col-12 px-1 d-flex mt-2">-->
+    <!--                        <div class="d-flex w-100 p-1 flex-wrap">-->
+    <!--                            <div class="col-xl-4 col-lg-6 col-md-6 col-sm-12 col-12 p-0">-->
+    <!--                                <img src="assets/image/img-2.png"-->
+    <!--                                     class="w-100 border-radius-top-left-80 d-block d-lg-none">-->
+    <!--                                <div style="background-image: url('assets/image/img-2.png')"-->
+    <!--                                     class="w-100 h-100 bgi-no-repeat bgi-position-center bgi-size-cover d-none d-lg-block"></div>-->
+    <!--                            </div>-->
+    <!--                            <div class="content col-xl-8 col-lg-6 col-md-6 col-sm-12 col-12 pl-0 pr-0 pr-lg-2 mt-2 mt-lg-0">-->
+    <!--                                <div class="title position-relative pr-4 dot-set dot-set-red bgc-sinbad border-radius-top-left-10 mr-4">-->
+    <!--                                    <a href="" class="font-size-16 font-weight-bold">رجبی دوانی</a>-->
+    <!--                                    <div class="title-sign position-absolute bgc-old-gold"></div>-->
+    <!--                                </div>-->
+    <!--                                <h5 class="mb-1 mt-2 font-size-20 font-weight-bold pr-0 pr-sm-2 pr-lg-0">ترور سردار سلیمانی مصداق حمله-->
+    <!--                                    مسلحانه است</h5>-->
+    <!--                                <p class="mb-0 font-size-16 pr-0 pr-sm-2 pr-lg-0">-->
+    <!--                                    لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان-->
+    <!--                                    گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است-->
+    <!--                                </p>-->
+    <!--                            </div>-->
+    <!--                        </div>-->
+    <!--                    </li>-->
+    <!--                    <li class="col-xl-3 col-lg-6 col-md-6 col-sm-12 col-12 pr-1 pl-0 d-flex mt-2">-->
+    <!--                        <div class="d-flex w-100 p-1 flex-wrap">-->
+    <!--                            <div class="col-xl-4 col-lg-6 col-md-6 col-sm-12 col-12 p-0">-->
+    <!--                                <img src="assets/image/img-3.png"-->
+    <!--                                     class="w-100 border-radius-top-left-80 d-block d-lg-none">-->
+    <!--                                <div style="background-image: url('assets/image/img-3.png')"-->
+    <!--                                     class="w-100 h-100 bgi-no-repeat bgi-position-center bgi-size-cover d-none d-lg-block"></div>-->
+    <!--                            </div>-->
+    <!--                            <div class="content col-xl-8 col-lg-6 col-md-6 col-sm-12 col-12 pl-0 pr-0 pr-lg-2 mt-2 mt-lg-0">-->
+    <!--                                <div class="title position-relative pr-4 dot-set dot-set-red bgc-skeptic border-radius-top-left-10 mr-4">-->
+    <!--                                    <a href="" class="font-size-16 font-weight-bold">اسماعیلی:</a>-->
+    <!--                                    <div class="title-sign position-absolute bgc-old-gold"></div>-->
+    <!--                                </div>-->
+    <!--                                <h5 class="mb-1 mt-2 font-size-20 font-weight-bold pr-0 pr-sm-2 pr-lg-0">ترور سردار سلیمانی مصداق حمله-->
+    <!--                                    مسلحانه است</h5>-->
+    <!--                                <p class="mb-0 font-size-16 pr-0 pr-sm-2 pr-lg-0">-->
+    <!--                                    لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان-->
+    <!--                                    گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است-->
+    <!--                                </p>-->
+    <!--                            </div>-->
+    <!--                        </div>-->
+    <!--                    </li>-->
+    <!--                </ul>-->
+    <!--            </div>-->
+    <!--        </div>-->
+    <!--    </div>-->
+    <div class="container custom-container slider quotes-from-professors-slider" data-animation="fadeInUp animated"
+         data-scroll-anim>
         <div class="row">
-            <div class="quotes-from-professors w-100">
-                <ul class="w-100 d-flex flex-wrap">
-                    <li class="col-xl-6 col-lg-12 col-md-12 col-sm-12 col-12 pl-1 pr-0 d-flex mt-2">
-                        <div class="d-flex w-100 p-1 flex-wrap">
-                            <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12 p-0 d-flex align-items-center">
-                                <img src="assets/image/img-1.png" class="w-100 border-radius-top-left-80">
-                            </div>
-                            <div class="content col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12 pl-0 pr-0 pr-lg-2 mt-2 mt-lg-0">
-                                <div class="title position-relative pr-4 dot-set dot-set-red bgc-manhattan border-radius-top-left-10 mr-4 mr-lg-0">
-                                    <a href="" class="font-size-16 font-weight-bold">دکتر حبیب زاده:</a>
-                                    <div class="title-sign position-absolute bgc-old-gold"></div>
-                                </div>
-                                <h5 class="mb-1 mt-2 font-size-20 font-weight-bold">ترور سردار سلیمانی مصداق حمله
-                                    مسلحانه است</h5>
-                                <p class="mb-0 font-size-16">
-                                    لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان
-                                    گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است
-                                </p>
-                            </div>
+            <div class="w-100 position-relative px-4 mb-3 d-flex" data-slider
+                 data-disable-number="4"
+                 data-disable-number-s="1" data-disable-number-m="4" data-disable-number-xl="4" data-items-nav="false"
+                 data-autoPlay="3000" data-pauseAutoPlayOnHover="true" data-loop="true" data-fade="false"
+                 data-cell-align="right">
+                <ul class="slider this-slider w-100">
+                    <li class="item col-xl-3 col-lg-3 col-md-4 col-sm-12 col-12 px-1">
+                        <div class="px-2 py-2">
+                            <a href="">
+                                <img class="w-100" src="assets/image/art-1.png" alt="slider-1">
+                                <span class="d-flex line-height-1 mt-2 font-weight-bold font-size-14 color-mist-gray">دکتر حبیب زاده در نشست حقوقی مطرح کرد</span>
+                                <span class="d-flex font-weight-bold font-size-18 line-height-1 mt-2">ترور سردار سلیمانی مصداق حمله مسلحانه است</span>
+                            </a>
                         </div>
                     </li>
-                    <li class="col-xl-3 col-lg-6 col-md-6 col-sm-12 col-12 px-1 d-flex mt-2">
-                        <div class="d-flex w-100 p-1 flex-wrap">
-                            <div class="col-xl-4 col-lg-6 col-md-6 col-sm-12 col-12 p-0">
-                                <img src="assets/image/img-2.png"
-                                     class="w-100 border-radius-top-left-80 d-block d-lg-none">
-                                <div style="background-image: url('assets/image/img-2.png')"
-                                     class="w-100 h-100 bgi-no-repeat bgi-position-center bgi-size-cover d-none d-lg-block"></div>
-                            </div>
-                            <div class="content col-xl-8 col-lg-6 col-md-6 col-sm-12 col-12 pl-0 pr-0 pr-lg-2 mt-2 mt-lg-0">
-                                <div class="title position-relative pr-4 dot-set dot-set-red bgc-sinbad border-radius-top-left-10 mr-4">
-                                    <a href="" class="font-size-16 font-weight-bold">رجبی دوانی</a>
-                                    <div class="title-sign position-absolute bgc-old-gold"></div>
-                                </div>
-                                <h5 class="mb-1 mt-2 font-size-20 font-weight-bold pr-0 pr-sm-2 pr-lg-0">ترور سردار سلیمانی مصداق حمله
-                                    مسلحانه است</h5>
-                                <p class="mb-0 font-size-16 pr-0 pr-sm-2 pr-lg-0">
-                                    لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان
-                                    گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است
-                                </p>
-                            </div>
+                    <li class="item col-xl-3 col-lg-3 col-md-4 col-sm-12 col-12 px-1">
+                        <div class="px-2 py-2">
+                            <a href="">
+                                <img class="w-100" src="assets/image/art-1.png" alt="slider-1">
+                                <span class="d-flex line-height-1 mt-2 font-weight-bold font-size-14 color-mist-gray">دکتر حبیب زاده در نشست حقوقی مطرح کرد</span>
+                                <span class="d-flex font-weight-bold font-size-18 line-height-1 mt-2">ترور سردار سلیمانی مصداق حمله مسلحانه است</span>
+                            </a>
                         </div>
                     </li>
-                    <li class="col-xl-3 col-lg-6 col-md-6 col-sm-12 col-12 pr-1 pl-0 d-flex mt-2">
-                        <div class="d-flex w-100 p-1 flex-wrap">
-                            <div class="col-xl-4 col-lg-6 col-md-6 col-sm-12 col-12 p-0">
-                                <img src="assets/image/img-3.png"
-                                     class="w-100 border-radius-top-left-80 d-block d-lg-none">
-                                <div style="background-image: url('assets/image/img-3.png')"
-                                     class="w-100 h-100 bgi-no-repeat bgi-position-center bgi-size-cover d-none d-lg-block"></div>
-                            </div>
-                            <div class="content col-xl-8 col-lg-6 col-md-6 col-sm-12 col-12 pl-0 pr-0 pr-lg-2 mt-2 mt-lg-0">
-                                <div class="title position-relative pr-4 dot-set dot-set-red bgc-skeptic border-radius-top-left-10 mr-4">
-                                    <a href="" class="font-size-16 font-weight-bold">اسماعیلی:</a>
-                                    <div class="title-sign position-absolute bgc-old-gold"></div>
-                                </div>
-                                <h5 class="mb-1 mt-2 font-size-20 font-weight-bold pr-0 pr-sm-2 pr-lg-0">ترور سردار سلیمانی مصداق حمله
-                                    مسلحانه است</h5>
-                                <p class="mb-0 font-size-16 pr-0 pr-sm-2 pr-lg-0">
-                                    لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان
-                                    گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است
-                                </p>
-                            </div>
+                    <li class="item col-xl-3 col-lg-3 col-md-4 col-sm-12 col-12 px-1">
+                        <div class="px-2 py-2">
+                            <a href="">
+                                <img class="w-100" src="assets/image/art-1.png" alt="slider-1">
+                                <span class="d-flex line-height-1 mt-2 font-weight-bold font-size-14 color-mist-gray">دکتر حبیب زاده در نشست حقوقی مطرح کرد</span>
+                                <span class="d-flex font-weight-bold font-size-18 line-height-1 mt-2">ترور سردار سلیمانی مصداق حمله مسلحانه است</span>
+                            </a>
+                        </div>
+                    </li>
+                    <li class="item col-xl-3 col-lg-3 col-md-4 col-sm-12 col-12 px-1">
+                        <div class="px-2 py-2">
+                            <a href="">
+                                <img class="w-100" src="assets/image/art-1.png" alt="slider-1">
+                                <span class="d-flex line-height-1 mt-2 font-weight-bold font-size-14 color-mist-gray">دکتر حبیب زاده در نشست حقوقی مطرح کرد</span>
+                                <span class="d-flex font-weight-bold font-size-18 line-height-1 mt-2">ترور سردار سلیمانی مصداق حمله مسلحانه است</span>
+                            </a>
+                        </div>
+                    </li>
+                    <li class="item col-xl-3 col-lg-3 col-md-4 col-sm-12 col-12 px-1">
+                        <div class="px-2 py-2">
+                            <a href="">
+                                <img class="w-100" src="assets/image/art-1.png" alt="slider-1">
+                                <span class="d-flex line-height-1 mt-2 font-weight-bold font-size-14 color-mist-gray">دکتر حبیب زاده در نشست حقوقی مطرح کرد</span>
+                                <span class="d-flex font-weight-bold font-size-18 line-height-1 mt-2">ترور سردار سلیمانی مصداق حمله مسلحانه است</span>
+                            </a>
                         </div>
                     </li>
                 </ul>
+                <div class="chevron chevron-left mr-2 position-absolute bgc-white-blur-5 d-flex justify-content-center align-items-center border-radius-50 cursor-pointer">
+                    <div class="title-sign bgc-sinbad"></div>
+                </div>
+                <div class="chevron chevron-right ml-2 position-absolute bgc-white-blur-5 d-flex justify-content-center align-items-center border-radius-50 cursor-pointer">
+                    <div class="title-sign bgc-sinbad"></div>
+                </div>
             </div>
         </div>
     </div>
     <div class="container custom-container">
-        <div class="row">
-            <div class="col-xl-5 col-lg-5 col-md-12 col-sm-12 col-12 mb-3 pr-lg-0" data-animation="fadeInUp animated" data-scroll-anim>
-                <div class="multimedia w-100">
+        <div class="row overflow-hidden" data-scroll-anim-parent>
+            <div class="col-xl-5 col-lg-5 col-md-12 col-sm-12 col-12 mb-3 pr-lg-0 parent-selector-anim" data-animation="fadeInRight animated">
+                <div class="multimedia w-100 parent-selector-anim" >
                     <div class="d-flex dropdown-parent w-100 justify-content-center">
                         <div class="dropdown col-md-4 col-sm-6 col-6">
-                            <button class="btn btn-secondary dropdown-toggle w-100 d-flex justify-content-between align-items-center" type="button" id="dropdownMenuButton0" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <button class="btn btn-secondary dropdown-toggle w-100 d-flex justify-content-between align-items-center"
+                                    type="button" id="dropdownMenuButton0" data-toggle="dropdown" aria-haspopup="true"
+                                    aria-expanded="false">
                                 فیلم و عکس
                             </button>
                             <div class="dropdown-menu w-100" aria-labelledby="dropdownMenuButton">
@@ -293,9 +383,45 @@
                         </div>
                     </div>
                     <div class="content p-2 my-2">
-                        <a href="">
-                            <img src="assets/image/img-4.png" class="w-100">
-                        </a>
+                        <div class="w-100 position-relative px-0 mb-0 d-flex" data-slider
+                             data-disable-number="1"
+                             data-disable-number-s="1" data-disable-number-m="1" data-disable-number-xl="1"
+                             data-items-nav="true"
+                             data-autoPlay="3000" data-pauseAutoPlayOnHover="true" data-loop="true" data-fade="true"
+                             data-cell-align="right">
+                            <ul class="slider this-slider w-100 mb-0">
+                                <li class="item col-xl-12 px-0">
+                                    <div class="px-0 py-0 position-relative">
+                                        <a href="">
+                                            <img class="w-100" src="assets/image/img-4.png" alt="slider-1">
+                                            <div class="show-text position-absolute py-2 px-2 bgc-black">
+                                                <span class="d-flex font-weight-bold font-size-18 color-mist-gray">سخه‌ی عربی و به‌روزرسانی شده کتاب «فلسطین از دیدگاه حضرت آیت‌الله خامنه‌ای» تحت عنوان «قضیة فلسطین»</span>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </li>
+                                <li class="item col-xl-12 px-0">
+                                    <div class="px-0 py-0 position-relative">
+                                        <a href="">
+                                            <img class="w-100" src="assets/image/img-5.png" alt="slider-1">
+                                            <div class="show-text position-absolute py-2 px-2 bgc-black">
+                                                <span class="d-flex font-weight-bold font-size-18 color-mist-gray">سخه‌ی عربی و به‌روزرسانی شده کتاب «فلسطین از دیدگاه حضرت آیت‌الله خامنه‌ای» تحت عنوان «قضیة فلسطین»</span>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </li>
+                                <li class="item col-xl-12 px-0">
+                                    <div class="px-0 py-0 position-relative">
+                                        <a href="">
+                                            <img class="w-100" src="assets/image/img-6.png" alt="slider-1">
+                                            <div class="show-text position-absolute py-2 px-2 bgc-black">
+                                                <span class="d-flex font-weight-bold font-size-18 color-mist-gray">سخه‌ی عربی و به‌روزرسانی شده کتاب «فلسطین از دیدگاه حضرت آیت‌الله خامنه‌ای» تحت عنوان «قضیة فلسطین»</span>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
                 <div class="interviews-conversations w-100">
@@ -312,7 +438,9 @@
                                     </div>
                                     <div class="item-content position-absolute pb-2">
                                         <div class="title-mark title-mark-left position-relative  bgc-old-gold-2 py-1 pr-3 d-flex align-items-center">
-                                            <a href="http://enghelab.khamenei.ir/shownews.php?idnews=500" class="font-size-12 mb-0 font-weight-bold">اندیشه‌ مقاومت ره‌توشه‌ ای برای‌ مبلغان‌ فرهنگی</a>
+                                            <a href="http://enghelab.khamenei.ir/shownews.php?idnews=500"
+                                               class="font-size-12 mb-0 font-weight-bold">اندیشه‌ مقاومت ره‌توشه‌ ای
+                                                برای‌ مبلغان‌ فرهنگی</a>
                                         </div>
                                         <span class="dot-set dot-set-red position-relative pr-4 font-weight-bold font-size-14">
                                                 در گفتگو با حجت الاسلام صلح میرزایی
@@ -323,7 +451,9 @@
                             <li class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12 pr-2 pr-md-0 d-flex flex-column justify-content-center">
                                 <div class="position-relative d-flex flex-wrap">
                                     <div class="title-mark title-mark-right position-absolute title-mark-right-before-nobel-1 bgc-bison-hide py-1 pr-3 d-flex align-items-center">
-                                        <a href="http://enghelab.khamenei.ir/shownews.php?idnews=137" class="font-weight-bold font-size-12 mb-0">حدیث ولایت 68" کتابی در تراز انقلاب و میراثی</a>
+                                        <a href="http://enghelab.khamenei.ir/shownews.php?idnews=137"
+                                           class="font-weight-bold font-size-12 mb-0">حدیث ولایت 68" کتابی در تراز
+                                            انقلاب و میراثی</a>
                                     </div>
                                     <div class="item-content col-xl-7 col-lg-7 col-md-7 col-sm-12 col-12 pb-2 pb-md-4 px-0 order-2 order-md-0">
                                         <p class="position-relative font-weight-bold font-size-12 pb-0 mb-0 mb-md-3 pt-2 pt-md-0">
@@ -337,7 +467,9 @@
                                 </div>
                                 <div class="position-relative d-flex flex-wrap mt-2">
                                     <div class="title-mark title-mark-right position-absolute title-mark-right-before-nobel-1 bgc-bison-hide py-1 pr-3 d-flex align-items-center">
-                                        <a href="http://enghelab.khamenei.ir/shownews.php?idnews=235" class="font-weight-bold font-size-12 mb-0">حدیث ولایت 68" کتابی در تراز انقلاب و میراثی</a>
+                                        <a href="http://enghelab.khamenei.ir/shownews.php?idnews=235"
+                                           class="font-weight-bold font-size-12 mb-0">حدیث ولایت 68" کتابی در تراز
+                                            انقلاب و میراثی</a>
                                     </div>
                                     <div class="item-content col-xl-7 col-lg-7 col-md-7 col-sm-12 col-12 pb-2 pb-md-4 px-0 order-2 order-md-0">
                                         <p class="position-relative font-weight-bold font-size-12 pb-0 mb-0 mb-md-3 pt-2 pt-md-0">
@@ -354,131 +486,265 @@
                     </div>
                 </div>
             </div>
-            <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12" data-animation="fadeInUp animated" data-scroll-anim>
-                <div class="last-news">
+            <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12" >
+                <div class="last-news parent-selector-anim" data-animation="fadeInDown animated">
                     <div class="title position-relative pl-4 dot-set dot-set-left dot-set-ecstasy bgc-mercury-1 border-radius-top-right-10 text-left">
                         <a href="" class="font-size-22 font-weight-bold">آخرین اخبار</a>
                     </div>
-                    <div class="content p-2 mt-2">
-                        <ul class="mb-0 p-1">
-                            <li class="dot-set dot-set-ecstasy pr-4 position-relative">
-                                <a href="" class="font-size-16 d-flex">حجت‌الاسلام خسروپناه: بیانیه گام دوم انقلاب ناظر به عینیت‌بخشی آرمان های انقلاب است</a>
-                            </li>
-                            <li class="dot-set dot-set-ecstasy pr-4 position-relative">
-                                <a href="" class="font-size-16 d-flex">اهمیتی که بحث مهدویت دارد، بحث توحید ندارد</a>
-                            </li>
-                            <li class="dot-set dot-set-ecstasy pr-4 position-relative">
-                                <a href="" class="font-size-16 d-flex">انتشار بیش از 50 تقریظ رهبر انقلاب بر کتاب‌های دفاع مقدس</a>
-                            </li>
-                            <li class="dot-set dot-set-ecstasy pr-4 position-relative">
-                                <a href="" class="font-size-16 d-flex">دکتر حبیب‌زاده: ترور سردار سلیمانی مصداق حمله مسلحانه است</a>
-                            </li>
-                            <li class="dot-set dot-set-ecstasy pr-4 position-relative">
-                                <a href="" class="font-size-16 d-flex">رجبی‌دوانی: عملکرد رهبر انقلاب در فتنه ۸۸ منطبق بر سیره امیرالمومنین(ع) در جنگ جمل می‌باشد</a>
-                            </li>
-                            <li class="dot-set dot-set-ecstasy pr-4 position-relative">
-                                <a href="" class="font-size-16 d-flex">اسماعیلی: کارآمدی و رأی مردم ، ملازم مشروعیت ولی فقیه</a>
-                            </li>
-                            <li class="dot-set dot-set-ecstasy pr-4 position-relative">
-                                <a href="" class="font-size-16 d-flex">حجت‌الاسلام‌والمسلمین‌مبلغی: یکی از روش‌های رهبری در تبیین مبحث غنا، کشف گفتمان روایی است</a>
-                            </li>
-                            <li class="dot-set dot-set-ecstasy pr-4 position-relative">
-                                <a href="" class="font-size-16 d-flex">نظام‌ جمهوری‌ اسلامی ، محصول جامع‌نگری به سیره ائمه‌معصومین است</a>
-                            </li>
-                            <li class="dot-set dot-set-ecstasy pr-4 position-relative">
-                                <a href="" class="font-size-16 d-flex">نشست «بررسی وجوه و مفاهیم نوآورانه بیانیه گام دوم انقلاب اسلامی»</a>
-                            </li>
-                            <li class="dot-set dot-set-ecstasy pr-4 position-relative">
-                                <a href="" class="font-size-16 d-flex">گزارش تصویری/ جلسه نقد کتاب «اندیشه سیاسی حضرت آیت‌الله خامنه‌ای»</a>
-                            </li>
-                            <li class="dot-set dot-set-ecstasy pr-4 position-relative">
-                                <a href="" class="font-size-16 d-flex">فیلم/ دومین نشست «روش‌شناسی اجتهادیِ رهبر معظّم انقلاب»</a>
-                            </li>
-                        </ul>
+                    <div data-scrollbar class="scrollbar-inner pl-4 pt-2">
+                        <div class="content">
+                            <ul class="mb-0 p-1">
+                                <li class="dot-set dot-set-ecstasy pr-4 position-relative">
+                                    <a href="" class="font-size-16 d-flex">حجت‌الاسلام خسروپناه: بیانیه گام دوم انقلاب
+                                        ناظر به عینیت‌بخشی آرمان های انقلاب است</a>
+                                </li>
+                                <li class="dot-set dot-set-ecstasy pr-4 position-relative">
+                                    <a href="" class="font-size-16 d-flex">اهمیتی که بحث مهدویت دارد، بحث توحید
+                                        ندارد</a>
+                                </li>
+                                <li class="dot-set dot-set-ecstasy pr-4 position-relative">
+                                    <a href="" class="font-size-16 d-flex">انتشار بیش از 50 تقریظ رهبر انقلاب بر
+                                        کتاب‌های دفاع مقدس</a>
+                                </li>
+                                <li class="dot-set dot-set-ecstasy pr-4 position-relative">
+                                    <a href="" class="font-size-16 d-flex">حجت‌الاسلام خسروپناه: بیانیه گام دوم انقلاب
+                                        ناظر به عینیت‌بخشی آرمان های انقلاب است</a>
+                                </li>
+                                <li class="dot-set dot-set-ecstasy pr-4 position-relative">
+                                    <a href="" class="font-size-16 d-flex">اهمیتی که بحث مهدویت دارد، بحث توحید
+                                        ندارد</a>
+                                </li>
+                                <li class="dot-set dot-set-ecstasy pr-4 position-relative">
+                                    <a href="" class="font-size-16 d-flex">انتشار بیش از 50 تقریظ رهبر انقلاب بر
+                                        کتاب‌های دفاع مقدس</a>
+                                </li>
+                                <li class="dot-set dot-set-ecstasy pr-4 position-relative">
+                                    <a href="" class="font-size-16 d-flex">دکتر حبیب‌زاده: ترور سردار سلیمانی مصداق حمله
+                                        مسلحانه است</a>
+                                </li>
+                                <li class="dot-set dot-set-ecstasy pr-4 position-relative">
+                                    <a href="" class="font-size-16 d-flex">رجبی‌دوانی: عملکرد رهبر انقلاب در فتنه ۸۸
+                                        منطبق بر سیره امیرالمومنین(ع) در جنگ جمل می‌باشد</a>
+                                </li>
+                                <li class="dot-set dot-set-ecstasy pr-4 position-relative">
+                                    <a href="" class="font-size-16 d-flex">اسماعیلی: کارآمدی و رأی مردم ، ملازم مشروعیت
+                                        ولی فقیه</a>
+                                </li>
+                                <li class="dot-set dot-set-ecstasy pr-4 position-relative">
+                                    <a href="" class="font-size-16 d-flex">حجت‌الاسلام‌والمسلمین‌مبلغی: یکی از روش‌های
+                                        رهبری در تبیین مبحث غنا، کشف گفتمان روایی است</a>
+                                </li>
+                                <li class="dot-set dot-set-ecstasy pr-4 position-relative">
+                                    <a href="" class="font-size-16 d-flex">نظام‌ جمهوری‌ اسلامی ، محصول جامع‌نگری به
+                                        سیره ائمه‌معصومین است</a>
+                                </li>
+                                <li class="dot-set dot-set-ecstasy pr-4 position-relative">
+                                    <a href="" class="font-size-16 d-flex">نشست «بررسی وجوه و مفاهیم نوآورانه بیانیه گام
+                                        دوم انقلاب اسلامی»</a>
+                                </li>
+                                <li class="dot-set dot-set-ecstasy pr-4 position-relative">
+                                    <a href="" class="font-size-16 d-flex">گزارش تصویری/ جلسه نقد کتاب «اندیشه سیاسی
+                                        حضرت آیت‌الله خامنه‌ای»</a>
+                                </li>
+                                <li class="dot-set dot-set-ecstasy pr-4 position-relative">
+                                    <a href="" class="font-size-16 d-flex">فیلم/ دومین نشست «روش‌شناسی اجتهادیِ رهبر
+                                        معظّم انقلاب»</a>
+                                </li>
+                                <li class="dot-set dot-set-ecstasy pr-4 position-relative">
+                                    <a href="" class="font-size-16 d-flex">اسماعیلی: کارآمدی و رأی مردم ، ملازم مشروعیت
+                                        ولی فقیه</a>
+                                </li>
+                                <li class="dot-set dot-set-ecstasy pr-4 position-relative">
+                                    <a href="" class="font-size-16 d-flex">حجت‌الاسلام‌والمسلمین‌مبلغی: یکی از روش‌های
+                                        رهبری در تبیین مبحث غنا، کشف گفتمان روایی است</a>
+                                </li>
+                                <li class="dot-set dot-set-ecstasy pr-4 position-relative">
+                                    <a href="" class="font-size-16 d-flex">نظام‌ جمهوری‌ اسلامی ، محصول جامع‌نگری به
+                                        سیره ائمه‌معصومین است</a>
+                                </li>
+                                <li class="dot-set dot-set-ecstasy pr-4 position-relative">
+                                    <a href="" class="font-size-16 d-flex">نشست «بررسی وجوه و مفاهیم نوآورانه بیانیه گام
+                                        دوم انقلاب اسلامی»</a>
+                                </li>
+                                <li class="dot-set dot-set-ecstasy pr-4 position-relative">
+                                    <a href="" class="font-size-16 d-flex">گزارش تصویری/ جلسه نقد کتاب «اندیشه سیاسی
+                                        حضرت آیت‌الله خامنه‌ای»</a>
+                                </li>
+                                <li class="dot-set dot-set-ecstasy pr-4 position-relative">
+                                    <a href="" class="font-size-16 d-flex">فیلم/ دومین نشست «روش‌شناسی اجتهادیِ رهبر
+                                        معظّم انقلاب»</a>
+                                </li>
+                                <li class="dot-set dot-set-ecstasy pr-4 position-relative">
+                                    <a href="" class="font-size-16 d-flex">اسماعیلی: کارآمدی و رأی مردم ، ملازم مشروعیت
+                                        ولی فقیه</a>
+                                </li>
+                                <li class="dot-set dot-set-ecstasy pr-4 position-relative">
+                                    <a href="" class="font-size-16 d-flex">حجت‌الاسلام‌والمسلمین‌مبلغی: یکی از روش‌های
+                                        رهبری در تبیین مبحث غنا، کشف گفتمان روایی است</a>
+                                </li>
+                                <li class="dot-set dot-set-ecstasy pr-4 position-relative">
+                                    <a href="" class="font-size-16 d-flex">نظام‌ جمهوری‌ اسلامی ، محصول جامع‌نگری به
+                                        سیره ائمه‌معصومین است</a>
+                                </li>
+                                <li class="dot-set dot-set-ecstasy pr-4 position-relative">
+                                    <a href="" class="font-size-16 d-flex">نشست «بررسی وجوه و مفاهیم نوآورانه بیانیه گام
+                                        دوم انقلاب اسلامی»</a>
+                                </li>
+                                <li class="dot-set dot-set-ecstasy pr-4 position-relative">
+                                    <a href="" class="font-size-16 d-flex">گزارش تصویری/ جلسه نقد کتاب «اندیشه سیاسی
+                                        حضرت آیت‌الله خامنه‌ای»</a>
+                                </li>
+                                <li class="dot-set dot-set-ecstasy pr-4 position-relative">
+                                    <a href="" class="font-size-16 d-flex">فیلم/ دومین نشست «روش‌شناسی اجتهادیِ رهبر
+                                        معظّم انقلاب»</a>
+                                </li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
-                <div class="other-media mt-2">
+                <div class="other-media mt-2 parent-selector-anim" data-animation="fadeInUp animated">
                     <div class="title position-relative pl-4 dot-set dot-set-left dot-set-ecstasy bgc-malta border-radius-top-right-10 text-left ml-4">
                         <a href="" class="font-size-22 font-weight-bold">دیگر رسانه ها</a>
                         <div class="title-sign title-sign-left position-absolute bgc-ecstasy"></div>
                     </div>
-                    <div class="content p-2 mt-2">
-                        <ul class="mb-0">
-                            <li class="dot-set dot-set-ecstasy pr-4 position-relative bgc-iron-2">
-                                <a href="" class="font-size-16">همایش بین المللی نظریه انتظار در اندیشه آیت الله العظمی خامنه‌ای</a>
-                            </li>
-                            <li class="dot-set dot-set-ecstasy pr-4 position-relative bgc-iron-2">
-                                <a href="" class="font-size-16">همایش بین المللی «نظریه انتظار در اندیشه حضرت آیت الله العظمی خامنه ای» برگزار می شود</a>
-                            </li>
-                            <li class="dot-set dot-set-ecstasy pr-4 position-relative bgc-iron-2">
-                                <a href="" class="font-size-16">استکبارستیزی موضوع محوری بیانیه گام دوم انقلاب</a>
-                            </li>
-                            <li class="dot-set dot-set-ecstasy pr-4 position-relative bgc-iron-2">
-                                <a href="" class="font-size-16">اجرای بیانیه گام دوم انقلاب شرایط را عوض می کند</a>
-                            </li>
-                        </ul>
+                    <div data-scrollbar class="scrollbar-inner pl-4 pt-2">
+                        <div class="content">
+                            <ul class="mb-0">
+                                <li class="dot-set dot-set-ecstasy pr-4 position-relative bgc-iron-2">
+                                    <a href="" class="font-size-16">همایش بین المللی نظریه انتظار در اندیشه آیت الله
+                                        العظمی خامنه‌ای</a>
+                                </li>
+                                <li class="dot-set dot-set-ecstasy pr-4 position-relative bgc-iron-2">
+                                    <a href="" class="font-size-16">همایش بین المللی «نظریه انتظار در اندیشه حضرت آیت
+                                        الله العظمی خامنه ای» برگزار می شود</a>
+                                </li>
+                                <li class="dot-set dot-set-ecstasy pr-4 position-relative bgc-iron-2">
+                                    <a href="" class="font-size-16">استکبارستیزی موضوع محوری بیانیه گام دوم انقلاب</a>
+                                </li>
+                                <li class="dot-set dot-set-ecstasy pr-4 position-relative bgc-iron-2">
+                                    <a href="" class="font-size-16">اجرای بیانیه گام دوم انقلاب شرایط را عوض می کند</a>
+                                </li>
+                                <li class="dot-set dot-set-ecstasy pr-4 position-relative bgc-iron-2">
+                                    <a href="" class="font-size-16">همایش بین المللی نظریه انتظار در اندیشه آیت الله
+                                        العظمی خامنه‌ای</a>
+                                </li>
+                                <li class="dot-set dot-set-ecstasy pr-4 position-relative bgc-iron-2">
+                                    <a href="" class="font-size-16">همایش بین المللی «نظریه انتظار در اندیشه حضرت آیت
+                                        الله العظمی خامنه ای» برگزار می شود</a>
+                                </li>
+                                <li class="dot-set dot-set-ecstasy pr-4 position-relative bgc-iron-2">
+                                    <a href="" class="font-size-16">استکبارستیزی موضوع محوری بیانیه گام دوم انقلاب</a>
+                                </li>
+                                <li class="dot-set dot-set-ecstasy pr-4 position-relative bgc-iron-2">
+                                    <a href="" class="font-size-16">اجرای بیانیه گام دوم انقلاب شرایط را عوض می کند</a>
+                                </li>
+                                <li class="dot-set dot-set-ecstasy pr-4 position-relative bgc-iron-2">
+                                    <a href="" class="font-size-16">همایش بین المللی نظریه انتظار در اندیشه آیت الله
+                                        العظمی خامنه‌ای</a>
+                                </li>
+                                <li class="dot-set dot-set-ecstasy pr-4 position-relative bgc-iron-2">
+                                    <a href="" class="font-size-16">همایش بین المللی «نظریه انتظار در اندیشه حضرت آیت
+                                        الله العظمی خامنه ای» برگزار می شود</a>
+                                </li>
+                                <li class="dot-set dot-set-ecstasy pr-4 position-relative bgc-iron-2">
+                                    <a href="" class="font-size-16">استکبارستیزی موضوع محوری بیانیه گام دوم انقلاب</a>
+                                </li>
+                                <li class="dot-set dot-set-ecstasy pr-4 position-relative bgc-iron-2">
+                                    <a href="" class="font-size-16">اجرای بیانیه گام دوم انقلاب شرایط را عوض می کند</a>
+                                </li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
             </div>
-            <div class="col-xl-3 col-lg-3 col-md-6 col-sm-12 col-12 pr-md-1 pl-lg-0 mb-4" data-animation="fadeInUp animated" data-scroll-anim>
+            <div class="col-xl-3 col-lg-3 col-md-6 col-sm-12 col-12 pr-md-1 pl-lg-0 mb-4 mt-4 mt-md-0 parent-selector-anim" data-animation="fadeInLeft animated">
                 <div class="new-releases">
                     <div class="title position-relative pl-4 dot-set dot-set-ecstasy bgc-mercury-1 border-radius-top-left-10 pr-4 mr-4">
                         <a href="" class="font-size-22 font-weight-bold">تازه های نشر</a>
                         <div class="title-sign position-absolute bgc-ecstasy"></div>
                     </div>
-                    <div class="content p-2 mt-2">
-                        <img src="assets/image/img-8.png" alt="img" class="w-100">
-                        <p class="my-1 font-size-12">سخه‌ی عربی و به‌روزرسانی شده کتاب «فلسطین از دیدگاه حضرت آیت‌الله خامنه‌ای» تحت عنوان «قضیة فلسطین» توسط انتشارات انقلاب اسلامی منتشر و روانه‌ی بازار کتاب جهان عرب شد.
-                            این کتاب 760 صفحه‌ای که با همت معاونت بین‌الملل مؤسسه پژوهشی فرهنگی انقلاب اسلامی، در هشت بخش تنظیم شده است، بیانگر منظومه فکری رهبر معظم انقلاب اسلامی در فلسطین و مبارزه با رژیم اشغالگر قدس می‌باشد.</p>
-                        <ul class="bgc-mercury-1 py-3 ml-4 pr-3 mb-0">
-                            <li class="position-relative mb-2">
-                                <div class="title-sign position-absolute bgc-red"></div>
-                                <div class="title-mark title-mark-right position-relative bgc-sinbad title-mark-right-before-nobel-1 py-1 pr-3 d-flex align-items-center">
-                                    <h6 class="font-size-16 mb-0"> آستانه‌ی نیمه‌ خرداد مجموعه شش جلدی «ره،رهرو،رهبر» منتشر ش</h6>
-                                </div>
-                            </li>
-                            <li class="position-relative mb-2">
-                                <div class="title-sign position-absolute bgc-red"></div>
-                                <div class="title-mark title-mark-right position-relative bgc-sinbad title-mark-right-before-nobel-1 py-1 pr-3 d-flex align-items-center">
-                                    <h6 class="font-size-16 mb-0">کتاب عکس «خاتم سلیمانی» منتشر شد</h6>
-                                </div>
-                            </li>
-                            <li class="position-relative mb-2">
-                                <div class="title-sign position-absolute bgc-red"></div>
-                                <div class="title-mark title-mark-right position-relative bgc-sinbad title-mark-right-before-nobel-1 py-1 pr-3 d-flex align-items-center">
-                                    <h6 class="font-size-16 mb-0">نشریه‌ی مسیر 1 - «معادله نصر»</h6>
-                                </div>
-                            </li>
-                            <li class="position-relative mb-2">
-                                <div class="title-sign position-absolute bgc-red"></div>
-                                <div class="title-mark title-mark-right position-relative bgc-sinbad title-mark-right-before-nobel-1 py-1 pr-3 d-flex align-items-center">
-                                    <h6 class="font-size-16 mb-0">انتشار مجموعه‌بیانات رهبرانقلاب در موضوع مقاومت</h6>
-                                </div>
-                            </li>
-                            <li class="position-relative mb-2">
-                                <div class="title-sign position-absolute bgc-red"></div>
-                                <div class="title-mark title-mark-right position-relative bgc-sinbad title-mark-right-before-nobel-1 py-1 pr-3 d-flex align-items-center">
-                                    <h6 class="font-size-16 mb-0">در آستانه‌ی نیمه‌ خرداد مجموعه شش جلدی «ره،رهرو،رهبر» منتشر شد</h6>
-                                </div>
-                            </li>
-                            <li class="position-relative mb-2">
-                                <div class="title-sign position-absolute bgc-red"></div>
-                                <div class="title-mark title-mark-right position-relative bgc-sinbad title-mark-right-before-nobel-1 py-1 pr-3 d-flex align-items-center">
-                                    <h6 class="font-size-16 mb-0">اگر بیشتر نیاز شد تکرار موارد بالا</h6>
-                                </div>
-                            </li>
-                        </ul>
+                    <div class="content p-2 mt-2 article">
+                        <div class="img-hover">
+                            <img src="assets/image/img-8.png" alt="img" class="w-100">
+                        </div>
+                        <div class="dot-set dot-set-ecstasy pr-3 mt-1 text-title position-relative">
+                            <a href="" class="font-size-20">همایش بین المللی نظریه انتظار در اندیشه آیت الله
+                                العظمی خامنه&zwnj;ای</a>
+                        </div>
+                        <p class="my-1 font-size-12">سخه‌ی عربی و به‌روزرسانی شده کتاب «فلسطین از دیدگاه حضرت آیت‌الله
+                            خامنه‌ای» تحت عنوان «قضیة فلسطین» توسط انتشارات انقلاب اسلامی منتشر و روانه‌ی بازار کتاب
+                            جهان عرب شد.
+                            این کتاب 760 صفحه‌ای که با همت معاونت بین‌الملل مؤسسه پژوهشی فرهنگی انقلاب اسلامی، در هشت
+                            بخش تنظیم شده است، بیانگر منظومه فکری رهبر معظم انقلاب اسلامی در فلسطین و مبارزه با رژیم
+                            اشغالگر قدس می‌باشد.</p>
+<!--                        <ul class="bgc-mercury-1 py-3 ml-4 pr-3 mb-0 ">-->
+<!--                            <li class="position-relative mb-2">-->
+<!--                                <div class="title-sign position-absolute bgc-red"></div>-->
+<!--                                <div class="title-mark title-mark-right position-relative bgc-sinbad title-mark-right-before-nobel-1 py-1 pr-3 d-flex align-items-center">-->
+<!--                                    <h6 class="font-size-16 mb-0"> آستانه‌ی نیمه‌ خرداد مجموعه شش جلدی «ره،رهرو،رهبر»-->
+<!--                                        منتشر ش</h6>-->
+<!--                                </div>-->
+<!--                            </li>-->
+<!--                            <li class="position-relative mb-2">-->
+<!--                                <div class="title-sign position-absolute bgc-red"></div>-->
+<!--                                <div class="title-mark title-mark-right position-relative bgc-sinbad title-mark-right-before-nobel-1 py-1 pr-3 d-flex align-items-center">-->
+<!--                                    <h6 class="font-size-16 mb-0">کتاب عکس «خاتم سلیمانی» منتشر شد</h6>-->
+<!--                                </div>-->
+<!--                            </li>-->
+<!--                            <li class="position-relative mb-2">-->
+<!--                                <div class="title-sign position-absolute bgc-red"></div>-->
+<!--                                <div class="title-mark title-mark-right position-relative bgc-sinbad title-mark-right-before-nobel-1 py-1 pr-3 d-flex align-items-center">-->
+<!--                                    <h6 class="font-size-16 mb-0">نشریه‌ی مسیر 1 - «معادله نصر»</h6>-->
+<!--                                </div>-->
+<!--                            </li>-->
+<!--                            <li class="position-relative mb-2">-->
+<!--                                <div class="title-sign position-absolute bgc-red"></div>-->
+<!--                                <div class="title-mark title-mark-right position-relative bgc-sinbad title-mark-right-before-nobel-1 py-1 pr-3 d-flex align-items-center">-->
+<!--                                    <h6 class="font-size-16 mb-0">انتشار مجموعه‌بیانات رهبرانقلاب در موضوع مقاومت</h6>-->
+<!--                                </div>-->
+<!--                            </li>-->
+<!--                            <li class="position-relative mb-2">-->
+<!--                                <div class="title-sign position-absolute bgc-red"></div>-->
+<!--                                <div class="title-mark title-mark-right position-relative bgc-sinbad title-mark-right-before-nobel-1 py-1 pr-3 d-flex align-items-center">-->
+<!--                                    <h6 class="font-size-16 mb-0">در آستانه‌ی نیمه‌ خرداد مجموعه شش جلدی «ره،رهرو،رهبر»-->
+<!--                                        منتشر شد</h6>-->
+<!--                                </div>-->
+<!--                            </li>-->
+<!--                            <li class="position-relative mb-2">-->
+<!--                                <div class="title-sign position-absolute bgc-red"></div>-->
+<!--                                <div class="title-mark title-mark-right position-relative bgc-sinbad title-mark-right-before-nobel-1 py-1 pr-3 d-flex align-items-center">-->
+<!--                                    <h6 class="font-size-16 mb-0">اگر بیشتر نیاز شد تکرار موارد بالا</h6>-->
+<!--                                </div>-->
+<!--                            </li>-->
+<!--                        </ul>-->
+
+                        <div class="sidebar">
+                            <div class="box-sidebar">
+                                <ul class="mb-0 mt-3 ml-4 bgc-mercury-1 py-3 pr-2">
+                                    <li class="p-2 pr-4 bgc-sinbad mb-3 quick-item position-relative py-1 title-mark title-mark-right title-mark-right-before-nobel-1">
+                                        <a href="#" style="background-image: url('assets/image/img-6.png')" class="img img-hover bgi-size-cover bgi-position-center bgi-no-repeat position-absolute hover-opacity-1-unit"></a>
+                                        <a href="#" class="font-weight-bold font-size-12 mr-3 d-inline-flex">نظام حقوقی مانند یک مجموعه زنده است اما اصالحیه های آن را به موجودی عجیب و غریب مبدل میکند</a>
+                                    </li>
+                                    <li class="p-2 pr-4 bgc-sinbad quick-item position-relative py-1 mb-2 title-mark title-mark-right title-mark-right-before-nobel-1">
+                                        <a href="#" style="background-image: url('assets/image/img-7.png')" class="img img-hover bgi-size-cover bgi-position-center bgi-no-repeat position-absolute hover-opacity-1-unit"></a>
+                                        <a href="#" class="font-weight-bold font-size-12 mr-3 d-inline-flex">نظام حقوقی مانند یک مجموعه زنده است اما اصالحیه های آن را به موجودی عجیب و غریب مبدل میکند</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-    <div class="container custom-container" data-animation="zoomIn animated" data-scroll-anim>
+    <div class="container custom-container">
         <div class="row">
-            <div class="media w-100 d-flex flex-wrap bgc-swamp py-3 px-3">
+            <div class="media w-100 d-flex flex-wrap bgc-swamp py-3 px-3 position-relative">
                 <div class="d-flex dropdown-parent w-100 justify-content-center">
                     <div class="dropdown col-md-4 col-sm-6 col-6">
-                        <button class="btn btn-secondary dropdown-toggle w-100 d-flex justify-content-between align-items-center" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <button class="btn btn-secondary dropdown-toggle w-100 d-flex justify-content-between align-items-center"
+                                type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true"
+                                aria-expanded="false">
                             فیلم و عکس
                         </button>
                         <div class="dropdown-menu w-100" aria-labelledby="dropdownMenuButton">
@@ -522,25 +788,50 @@
                         </div>
                     </div>
                 </div>
-                <div class="content w-100 position-relative pb-4">
-                    <ul class="w-100 d-flex flex-wrap pt-2">
-                        <li class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12 d-inline-flex flex-wrap px-2 mb-3">
-                            <a href="" class="w-100">
-                                <img src="assets/image/img-9.png" alt="img" class="w-100">
+                <div class="content w-100 pb-4 position-static">
+                    <ul class="w-100 d-flex flex-wrap pt-2 position-static" data-scroll-anim-parent>
+                        <li class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12 d-inline-flex flex-wrap px-2 mb-3 position-static">
+                            <a href="" class="w-100 hover-opacity-1-unit parent-selector-anim" data-animation="fadeInUp animated">
+                                <div class="img-hover">
+                                    <img src="assets/image/img-9.png" alt="img" class="w-100">
+                                </div>
+                                <div class="position-absolute content-shower d-flex align-items-center bgc-gray-1">
+                                    <p class="font-weight-bold font-size-14 mb-0 text-no-wrap color-white">از نظر محتوایی هر کشوری باید سخنان افراد بالادست خود را منتشر کند</p>
+                                </div>
                             </a>
                         </li>
-                        <li class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12 d-inline-flex flex-wrap px-0">
-                            <a href="" class="w-50 px-2 pb-2">
-                                <img src="assets/image/img-10.png" alt="img" class="w-100">
+                        <li class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12 d-inline-flex flex-wrap px-0 position-static">
+                            <a href="" class="w-50 px-2 pb-2 hover-opacity-1-unit parent-selector-anim" data-animation="fadeInDown animated">
+                                <div class="img-hover">
+                                    <img src="assets/image/img-10.png" alt="img" class="w-100">
+                                </div>
+                                <div class="position-absolute content-shower d-flex align-items-center bgc-gray-1">
+                                    <p class="font-weight-bold font-size-14 mb-0 text-no-wrap color-white">از نظر محتوایی هر کشوری باید سخنان افراد بالادست خود را منتشر کند2</p>
+                                </div>
                             </a>
-                            <a href="" class="w-50 px-2 pb-2">
-                                <img src="assets/image/content/3.jpg" alt="img" class="w-100">
+                            <a href="" class="w-50 px-2 pb-2 hover-opacity-1-unit parent-selector-anim" data-animation="fadeInLeft animated">
+                                <div class="img-hover">
+                                    <img src="assets/image/content/3.jpg" alt="img" class="w-100">
+                                </div>
+                                <div class="position-absolute content-shower d-flex align-items-center bgc-gray-1">
+                                    <p class="font-weight-bold font-size-14 mb-0 text-no-wrap color-white">از نظر محتوایی هر کشوری باید سخنان افراد بالادست خود را منتشر کند3</p>
+                                </div>
                             </a>
-                            <a href="" class="w-50 px-2 pt-1">
-                                <img src="assets/image/content/4.jpg" alt="img" class="w-100">
+                            <a href="" class="w-50 px-2 pt-1 hover-opacity-1-unit parent-selector-anim" data-animation="fadeInRight animated">
+                                <div class="img-hover">
+                                    <img src="assets/image/content/4.jpg" alt="img" class="w-100">
+                                </div>
+                                <div class="position-absolute content-shower d-flex align-items-center bgc-gray-1">
+                                    <p class="font-weight-bold font-size-14 mb-0 text-no-wrap color-white">از نظر محتوایی هر کشوری باید سخنان افراد بالادست خود را منتشر کند4</p>
+                                </div>
                             </a>
-                            <a href="" class="w-50 px-2 pt-1">
-                                <img src="assets/image/content/1.jpg" alt="img" class="w-100">
+                            <a href="" class="w-50 px-2 pt-1 hover-opacity-1-unit parent-selector-anim" data-animation="fadeInUp animated">
+                                <div class="img-hover">
+                                    <img src="assets/image/content/1.jpg" alt="img" class="w-100">
+                                </div>
+                                <div class="position-absolute content-shower d-flex align-items-center bgc-gray-1">
+                                    <p class="font-weight-bold font-size-14 mb-0 text-no-wrap color-white">از نظر محتوایی هر کشوری باید سخنان افراد بالادست خود را منتشر کن5د</p>
+                                </div>
                             </a>
                         </li>
                     </ul>
@@ -553,12 +844,15 @@
             <div class="day-count w-100 d-flex flex-wrap py-3">
                 <div class="d-flex dropdown-parent w-100 justify-content-center">
                     <div class="dropdown col-md-8 col-sm-10 col-11">
-                        <button class="btn btn-secondary dropdown-toggle w-100 d-flex justify-content-between align-items-center" type="button" id="dropdownMenuButton1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <button class="btn btn-secondary dropdown-toggle w-100 d-flex justify-content-between align-items-center"
+                                type="button" id="dropdownMenuButton1" data-toggle="dropdown" aria-haspopup="true"
+                                aria-expanded="false">
                             روز شمار
                         </button>
                         <div class="dropdown-menu w-100" aria-labelledby="dropdownMenuButton">
-                            <a class="dropdown-item" href="#">گاه شمار زندگی حضرت آیت الله سید علی خامنه ای /۱۳۱۸-۱۳۶۸</a>
-                            <a class="dropdown-item" href="#">خظرت  آیت الله خامنه ای در آینه مطبوعات / ۱۳۵۹-۱۳۶۸</a>
+                            <a class="dropdown-item" href="#">گاه شمار زندگی حضرت آیت الله سید علی خامنه ای
+                                /۱۳۱۸-۱۳۶۸</a>
+                            <a class="dropdown-item" href="#">خظرت آیت الله خامنه ای در آینه مطبوعات / ۱۳۵۹-۱۳۶۸</a>
                         </div>
                     </div>
                 </div>
@@ -814,7 +1108,8 @@
                                 <a href="" class="font-weight-bold font-size-14 w-100 color-wild-willow">اطلاعیه ها</a>
                             </li>
                             <li>
-                                <a href="" class="font-weight-bold font-size-14 w-100 color-wild-willow">سامانه پیامکی</a>
+                                <a href="" class="font-weight-bold font-size-14 w-100 color-wild-willow">سامانه
+                                    پیامکی</a>
                             </li>
                             <li>
                                 <a href="" class="font-weight-bold font-size-14 w-100 color-wild-willow">عضویت</a>
@@ -867,7 +1162,8 @@
                         </div>
                         <ul class="mb-0 pr-3 flex-2">
                             <li>
-                                <a href="" class="font-weight-bold font-size-14 w-100 color-wild-willow">مقالات پژوهشی</a>
+                                <a href="" class="font-weight-bold font-size-14 w-100 color-wild-willow">مقالات
+                                    پژوهشی</a>
                             </li>
                             <li>
                                 <a href="" class="font-weight-bold font-size-14 w-100 color-wild-willow">فیش ها</a>
@@ -905,7 +1201,8 @@
                         </div>
                         <ul class="mb-0 pr-3 flex-2">
                             <li>
-                                <a href="" class="font-weight-bold font-size-14 w-100 color-wild-willow">تصاویر دیدار ها</a>
+                                <a href="" class="font-weight-bold font-size-14 w-100 color-wild-willow">تصاویر دیدار
+                                    ها</a>
                             </li>
                             <li>
                                 <a href="" class="font-weight-bold font-size-14 w-100 color-wild-willow">تصاویر ویژه</a>
@@ -958,21 +1255,24 @@
                     </div>
                 </div>
                 <div class="bgc-bandicoot mt-2 py-2 w-100">
-                    <div class="d-flex align-items-start">
-                        <div class="social-network d-inline-flex justify-content-center flex-2">
+                    <div class="d-flex align-items-start justify-content-center justify-content-md-between flex-wrap">
+                        <div class="col-xl-1"></div>
+                        <div class="social-network d-inline-flex justify-content-center">
                             <a href="" class="icon-font-eta font-size-26 color-white mx-1"></a>
                             <a href="" class="icon-font-sourosh font-size-26 color-white mx-1"></a>
                             <a href="" class="icon-font-bale font-size-26 color-white mx-1"></a>
                             <a href="" class="icon-font-gap font-size-26 color-white mx-1"></a>
                         </div>
                         <div class="d-flex justify-content-end p-0 position-relative">
-                            <form class="search-btn search-btn-footer position-absolute bgc-mist-gray pr-1 pl-2 py-1 d-inline-flex mt-1 mr-auto position-relative overflow-hidden">
-                                <a href=""
-                                   class="icon-font-search font-size-16 color-mist-gray d-inline-flex bgc-red align-items-center justify-content-center"></a>
-                                <div class="d-flex position-absolute search-box">
-                                    <input type="search" class="font-size-16 font-weight-bold border-0 outline-none mr-2" placeholder="جستجو">
-                                    <a href="#" class="icon-font-search bgc-white d-inline-flex justify-content-center align-items-center border-radius-0"></a>
+                            <form class="search-btn ml-2 search-btn-footer w-auto bgc-mist-gray pr-1 pl-0 py-0 d-inline-flex mt-1 mr-auto position-relative overflow-hidden">
+                                <div class="d-flex search-box">
+                                    <input type="search"
+                                           class="font-size-16 font-weight-bold border-0 outline-none mr-2 bg-transparent"
+                                           placeholder="جستجو">
                                 </div>
+                                <a href=""
+                                   class="icon-font-search stop-click font-size-16 color-mist-gray d-inline-flex bgc-red align-items-center justify-content-center"></a>
+
                             </form>
                         </div>
                     </div>
@@ -999,6 +1299,9 @@
 <div class="black-page"></div>
 <script src="assets/js/plugins/jquery/jquery-3.3.1.min.js"></script>
 <script src="assets/vendors/bootstrap/bootstrap-4.5.0-dist/js/bootstrap.bundle.min.js"></script>
+<script src="assets/vendors/flickity/js/flickity.pkgd.min.js"></script>
+<script src="assets/vendors/flickity/js/flickity-fade.js"></script>
+<script src="assets/js/plugins/scrollbar/jquery.scrollbar.js"></script>
 <script src="assets/js/main.js"></script>
 </body>
 </html>

@@ -2,19 +2,28 @@
 //home page
 // ==========================================
 .home-page {
-  .content {
-    top: 50%;
-    transform: translate(0,-50%);
+  min-height: 500px;
+  > img {
+    height: 100vh;
+  }
+
+  .container {
+    bottom: 0;
     right: 0;
-    .text{
-      background-color: rgba(224, 224, 224, 0.66);
-      border-bottom-left-radius: 50px;
-    }
-    .title-sign{
-      transform: rotate(-92deg);
-      bottom: -14px;
-      right: 10px;
-      top: auto;
+    left: 0;
+
+    .content {
+      .text {
+        background-color: rgba(224, 224, 224, 0.66);
+        border-bottom-left-radius: 50px;
+      }
+
+      .title-sign {
+        transform: rotate(-92deg);
+        bottom: -14px;
+        right: 10px;
+        top: auto;
+      }
     }
   }
 
@@ -23,7 +32,7 @@
       top: 0;
       margin-top: -110px;
       position: relative !important;
-      transform: translate(0,0);
+      transform: translate(0, 0);
     }
   }
 
@@ -46,11 +55,12 @@
       }
     }
   }
+
   @include media-query("(max-width: 767px)") {
     ul {
       li {
-        &.col-xl-3{
-          img{
+        &.col-xl-3 {
+          img {
             max-height: 73vw;
           }
         }
@@ -66,14 +76,15 @@
   .content {
     border: 2px solid $color-iron;
   }
+
   @include media-query("(min-width: 1295px)") {
-    .dropdown-parent{
+    .dropdown-parent {
       display: none !important;
     }
   }
 
   @include media-query("(max-width: 1294px)") {
-    .title-pic-and-vid{
+    .title-pic-and-vid {
       display: none !important;
     }
   }
@@ -91,14 +102,16 @@
         bottom: -58px;
         left: 0;
         right: 0;
-        p{
+
+        p {
           word-spacing: -2px;
         }
       }
     }
   }
+
   @include media-query("(max-width: 767px)") {
-    .bgi-no-repeat{
+    .bgi-no-repeat {
       height: 33vw !important;
     }
   }
@@ -108,11 +121,14 @@
 //last news
 // ==========================================
 .last-news {
-  .content {
-    border: 2px solid $color-iron;
+  [data-scrollbar] {
+    height: 445px !important;
+  }
 
-    > ul {
-      border: 2px solid $color-drench-gray;
+  .content {
+
+    ul {
+      border: 2px solid $color-iron;
 
       li {
         border-bottom: 1px dotted $color-mercury-1;
@@ -126,11 +142,30 @@
 }
 
 //==========================================
+// other media
+// ==========================================
+.other-media {
+  [data-scrollbar] {
+    height: 118px !important;
+  }
+}
+
+//==========================================
 //new releases
 // ==========================================
 .new-releases {
   .content {
     border: 2px solid $color-iron;
+
+    .text-title {
+      &.dot-set {
+        &::before {
+          right: 3px;
+          transform: translate(0, 0);
+          top: 10px;
+        }
+      }
+    }
 
     .title-mark {
       left: 0;
@@ -142,6 +177,59 @@
       top: -4px;
       right: -8px;
     }
+
+    &.article {
+      .sidebar {
+        .box-sidebar {
+          ul {
+            .quick-item {
+              margin-left: -20px !important;
+
+              .img {
+                height: 84px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.img-hover {
+  position: relative;
+  overflow: hidden;
+}
+
+.img-hover::before {
+  position: absolute;
+  top: 0;
+  left: -82%;
+  z-index: 2;
+  display: block;
+  content: '';
+  width: 50%;
+  height: 100%;
+  background: -webkit-linear-gradient(left, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, .3) 100%);
+  background: linear-gradient(to right, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, .3) 100%);
+  -webkit-transform: skewX(-25deg);
+  transform: skewX(-25deg);
+}
+
+.img-hover:hover::before {
+  -webkit-animation: shine .75s;
+  animation: shine .75s;
+}
+
+@-webkit-keyframes shine {
+  100% {
+    left: 125%;
+  }
+}
+
+@keyframes shine {
+  100% {
+    left: 125%;
   }
 }
 
@@ -159,15 +247,59 @@
       left: -3px;
       right: 0;
     }
+
+    ul {
+      li {
+        .content-shower {
+          top: 15px;
+          left: 17px;
+          right: 56px;
+          padding: 5px 6px;
+          border-radius: 10px 0 0 0;
+          opacity: 0;
+          visibility: hidden;
+          transition: all .5s ease;
+        }
+
+        a {
+
+          @include media-query("(max-width:1295px)") {
+            position: relative;
+            .content-shower {
+              top: 0;
+              right: 0;
+              overflow: hidden;
+              padding-right: 20px;
+              padding-left: 20px;
+              bottom: 0;
+              left: 0;
+              justify-content: center;
+              background-color: rgba(0, 0, 0, 0.3);
+              p{
+                white-space: inherit;
+              }
+            }
+
+          }
+          &:hover {
+            .content-shower {
+              opacity: 1;
+              visibility: visible;
+            }
+          }
+        }
+      }
+    }
   }
+
   @include media-query("(min-width: 1295px)") {
-    .dropdown-parent{
+    .dropdown-parent {
       display: none !important;
     }
   }
 
   @include media-query("(max-width: 1294px)") {
-    .title-pic-and-vid{
+    .title-pic-and-vid {
       display: none !important;
     }
   }
@@ -195,7 +327,7 @@
 
       @include media-query("(max-width: 991px)") {
         width: 50%;
-        &:first-child{
+        &:first-child {
           width: 60%;
         }
 
@@ -203,11 +335,12 @@
 
       @include media-query("(max-width: 767px)") {
         width: 100%;
-        &:first-child{
+        &:first-child {
           width: 100%;
         }
 
       }
+
       .date-of-date {
         width: 100px;
         height: 100px;
@@ -240,14 +373,15 @@
       }
     }
   }
+
   @include media-query("(min-width: 1295px)") {
-    .dropdown-parent{
+    .dropdown-parent {
       display: none !important;
     }
   }
 
   @include media-query("(max-width: 1294px)") {
-    .title-pic-and-vid{
+    .title-pic-and-vid {
       display: none !important;
     }
     .days {
@@ -280,14 +414,48 @@
     }
   }
 }
+
 .rtl {
   .media,
   .day-coun,
-  .multimedia{
-    .dropdown-toggle{
-      &::after{
+  .multimedia {
+    .dropdown-toggle {
+      &::after {
         margin: 0;
       }
     }
   }
+}
+
+//==========================================
+//scrollbar
+// ==========================================
+.scroll-element_inner-wrapper {
+  display: none;
+}
+
+.scrollbar-inner > .scroll-element.scroll-y {
+  background-color: #E6E6E6;
+  width: 4px;
+  right: auto;
+  left: 7px;
+  top: 8px;
+  border-radius: 0;
+  z-index: 1;
+  bottom: 0;
+  height: auto;
+}
+
+.scrollbar-inner > .scroll-element .scroll-element_outer, .scrollbar-inner > .scroll-element .scroll-element_outer div {
+  display: block;
+  height: 100%;
+  left: -1px;
+  top: 0;
+  width: 8px;
+  opacity: 1;
+  border-radius: 0;
+}
+
+.scrollbar-inner > .scroll-element .scroll-bar {
+  background-color: #ff6c00;
 }
