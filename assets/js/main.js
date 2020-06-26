@@ -60,7 +60,7 @@ $(window).on('ready load resize change', function () {
     $(".edame-right").css({
         left: $(".header-fix > .container").offset().left + $(".header-fix > .container").outerWidth()
     })
-    $(".home-page").css("height", $(window).height())
+    $(".home-page").css("height", $(window).height() - $(".quotes-from-professors-slider").outerHeight())
 });
 $(window).scroll(function () {
     if ($(window).scrollTop() >= $("header").offset().top) {

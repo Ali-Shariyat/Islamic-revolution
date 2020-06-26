@@ -1,6 +1,18 @@
 footer{
   .seasons{
+    .title{
+      a{
+        &:hover{
+          opacity: 1 !important;
+          color: $color-white;
+          + .title-sign{
+            background-color: $color-white !important;
+          }
+        }
+      }
+    }
     .title-sign{
+      transition: all .2s ease;
       transform: rotate(-90deg);
       right: -24px;
       top: calc(50% + 2px);
