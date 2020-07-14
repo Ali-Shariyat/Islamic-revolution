@@ -916,6 +916,9 @@ ul li {
     left: -5px;
     bottom: 10px;
 
+    @include media-query("(max-width: 767px)") {
+      right: 10px;
+    }
     &::before {
       content: "";
       position: absolute;
@@ -972,6 +975,9 @@ main {
 
   &.active {
     width: 234px;
+    @-moz-document url-prefix() {
+      width: 266px;
+    }
   }
 
   &.search-btn-footer {

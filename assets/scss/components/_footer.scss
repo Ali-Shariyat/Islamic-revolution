@@ -29,4 +29,22 @@ footer{
     border-top: 2px solid $color-iron;
     border-bottom: 2px solid $color-iron;
   }
+
+
+  .search-btn{
+    width: 34px;
+  }
+  .search-btn-pr{
+    .search-btn{
+      border-radius: 50px;
+      position: absolute;
+    }
+    @include media-query("(max-width: 767px)") {
+      position: absolute !important;
+      left: 6px;
+      .search-btn{
+        position: relative;
+      }
+    }
+  }
 }

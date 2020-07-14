@@ -350,3 +350,14 @@ $(window).on('ready load resize change', function () {
         });
     }
 });
+
+$("[data-slide-hover] li").hover(function () {
+    $(this).parents(".content").siblings(".title-pic-and-vid").find("[data-set-text] span").text($(this).find(".show-text span").text());
+});
+$("[data-slide-hover]").on( 'select.flickity', function( event, index ) {
+    $(this).find(".is-selected").parents(".content").siblings(".title-pic-and-vid").find("[data-set-text] span").text($(this).find(".is-selected").find(".show-text span").text());
+});
+$(".media .content [data-length]").hover(function () {
+    console.log($(this).index() + 1);
+    $(this).parents(".media").find(".title-pic-and-vid [data-get-main-text="+$(this).attr("data-length")+"]").addClass("active").siblings().removeClass("active");
+});
